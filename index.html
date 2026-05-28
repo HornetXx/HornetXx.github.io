@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>定格动画作品集 | [替换你的动画名称]</title>
+    <title>Stop-Motion Animation Portfolio | [Replace with your animation title]</title>
     <style>
-        /* 基础样式与全局排版 */
+        /* Basic Styles & Global Layout */
         :root {
             --primary-color: #2c3e50;
             --accent-color: #e74c3c;
@@ -22,7 +22,7 @@
         }
         h1, h2, h3 { color: var(--primary-color); }
         
-        /* 顶部导航栏 */
+        /* Top Navigation Bar */
         nav {
             position: fixed;
             top: 0;
@@ -43,7 +43,7 @@
         }
         nav a:hover { color: var(--accent-color); }
 
-        /* 页面区块通用样式 */
+        /* General Section Styles */
         section {
             padding: 100px 20px 60px;
             max-width: 1000px;
@@ -57,7 +57,7 @@
             letter-spacing: 2px;
         }
 
-        /* 首页首屏 (Hero Section) */
+        /* Hero Section */
         #home {
             height: 100vh;
             display: flex;
@@ -70,7 +70,7 @@
         #home h1 { font-size: 4em; margin-bottom: 10px; }
         #home p { font-size: 1.5em; color: #666; }
 
-        /* 团队介绍网格 */
+        /* Team Grid */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -81,12 +81,12 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background-color: #ddd; /* 占位色 */
+            background-color: #ddd; /* Placeholder color */
             object-fit: cover;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        /* 过程对比 (试错与改进) */
+        /* Process Comparison Box */
         .comparison-box {
             display: flex;
             gap: 20px;
@@ -103,8 +103,8 @@
             transition: transform 0.3s;
         }
         .card:hover { transform: translateY(-5px); }
-        .card.fail { border-top: 5px solid #e74c3c; } /* 失败尝试标红 */
-        .card.success { border-top: 5px solid #2ecc71; } /* 成功改进标绿 */
+        .card.fail { border-top: 5px solid #e74c3c; } /* Red for failed attempts */
+        .card.success { border-top: 5px solid #2ecc71; } /* Green for successful improvements */
         
         .placeholder-img {
             width: 100%;
@@ -119,7 +119,7 @@
             border: 2px dashed #ccc;
         }
 
-        /* 画廊网格 (分镜与花絮) */
+        /* Gallery Grid (Storyboards & BTS) */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -127,10 +127,10 @@
         }
         .gallery-grid .placeholder-img { height: 250px; margin-bottom: 0; }
 
-        /* 视频容器 */
+        /* Video Container */
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 比例 */
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
             border-radius: 10px;
@@ -144,7 +144,7 @@
             height: 100%;
         }
 
-        /* 页脚 */
+        /* Footer */
         footer {
             background: var(--primary-color);
             color: white;
@@ -157,103 +157,103 @@
 <body>
 
     <nav>
-        <a href="#home">首页</a>
-        <a href="#about">团队介绍</a>
-        <a href="#process">创作过程</a>
-        <a href="#gallery">幕后花絮</a>
-        <a href="#final">最终成品</a>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#process">Development Process</a>
+        <a href="#gallery">Behind the Scenes</a>
+        <a href="#final">Final Animation</a>
     </nav>
 
     <section id="home">
-        <h1>[你的定格动画名称]</h1>
-        <p>创新媒体课程项目 | 探索自然与重生的故事</p>
+        <h1>[Your Animation Title]</h1>
+        <p>Innovative Media Course Project | Exploring the Story of Nature and Rebirth</p>
     </section>
 
     <section id="about">
-        <h2 class="section-title">认识我们的团队</h2>
+        <h2 class="section-title">Meet Our Team</h2>
         <div class="team-grid">
             <div class="team-member">
-                <div class="placeholder-img" style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px;">照片占位</div>
-                <h3>[组员姓名 A]</h3>
-                <p>学号: 0001234</p>
-                <p><strong>分工:</strong> 组长、分镜设计、剧本</p>
+                <div class="placeholder-img" style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px;">Photo Placeholder</div>
+                <h3>[Team Member Name A]</h3>
+                <p>Student ID: 0001234</p>
+                <p><strong>Role:</strong> Leader, Storyboard, Script</p>
             </div>
             <div class="team-member">
-                <div class="placeholder-img" style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px;">照片占位</div>
-                <h3>[组员姓名 B]</h3>
-                <p>学号: 0001235</p>
-                <p><strong>分工:</strong> 角色设计、道具制作</p>
+                <div class="placeholder-img" style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px;">Photo Placeholder</div>
+                <h3>[Team Member Name B]</h3>
+                <p>Student ID: 0001235</p>
+                <p><strong>Role:</strong> Character Design, Prop Making</p>
             </div>
             <div class="team-member">
-                <div class="placeholder-img" style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px;">照片占位</div>
-                <h3>[组员姓名 C]</h3>
-                <p>学号: 0001236</p>
-                <p><strong>分工:</strong> 摄影、布光、后期剪辑</p>
+                <div class="placeholder-img" style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px;">Photo Placeholder</div>
+                <h3>[Team Member Name C]</h3>
+                <p>Student ID: 0001236</p>
+                <p><strong>Role:</strong> Filming, Lighting, Video Editing</p>
             </div>
         </div>
     </section>
 
     <section id="process">
-        <h2 class="section-title">从灵感到实现：我们的试错过程</h2>
+        <h2 class="section-title">From Inspiration to Reality: Our Trial and Error Process</h2>
         
-        <h3>剧本演变</h3>
-        <p>在初期，我们面临了叙事过于复杂的问题。经过多次讨论，我们不断做减法，只保留了最核心的情感。</p>
+        <h3>Script Evolution</h3>
+        <p>In the early stages, we faced the problem of an overly complex narrative. After several discussions, we kept simplifying it, retaining only the core emotion.</p>
         <div class="comparison-box">
             <div class="card fail">
-                <div class="placeholder-img">[替换为：第一版废弃剧本截图]</div>
-                <h4>第一版草稿：太复杂</h4>
-                <p>角色过多，场景转换频繁。考虑到定格动画“剪纸”形式的制作难度，我们发现这在3天内是不可能完成的。</p>
+                <div class="placeholder-img">[Replace with: Screenshot of the discarded first draft]</div>
+                <h4>First Draft: Too Complicated</h4>
+                <p>Too many characters and frequent scene changes. Considering the difficulty of the "cut-out" style stop-motion animation, we realized this was impossible to complete in 3 days.</p>
             </div>
             <div class="card success">
-                <div class="placeholder-img">[替换为：最终版剧本截图]</div>
-                <h4>最终版定稿：纯旁白童话风</h4>
-                <p>我们删除了所有对话，改为纯旁白叙事。这不仅减轻了工作量，还为动画增添了绘本故事般的质感。</p>
+                <div class="placeholder-img">[Replace with: Screenshot of the final script]</div>
+                <h4>Final Draft: Pure Narration in a Fairy Tale Style</h4>
+                <p>We removed all dialogues and changed it to a pure narration. This not only reduced our workload but also added a storybook feel to the animation.</p>
             </div>
         </div>
 
-        <h3>角色与道具排雷</h3>
-        <p>制作可动剪纸关节是我们遇到的最大技术挑战。</p>
+        <h3>Character and Prop Development</h3>
+        <p>Making movable cut-out joints was our biggest technical challenge.</p>
         <div class="comparison-box">
             <div class="card fail">
-                <div class="placeholder-img">[替换为：失败的胶带道具图]</div>
-                <h4>第一次尝试：透明胶带固定</h4>
-                <p>最初我们用透明胶带连接角色的手臂，结果发现非常僵硬，无法摆出细腻的表情，且尺寸太小难以拍摄。</p>
+                <div class="placeholder-img">[Replace with: Image of the failed tape prop]</div>
+                <h4>First Attempt: Transparent Tape Fixing</h4>
+                <p>Initially, we used transparent tape to connect the character's arms. We found it very stiff, unable to show delicate expressions, and too small to film.</p>
             </div>
             <div class="card success">
-                <div class="placeholder-img">[替换为：成功的铁丝道具图/动图]</div>
-                <h4>最终解决方案：放大尺寸+铁丝关节</h4>
-                <p>经过重新测试，我们将角色尺寸放大了两倍，并使用细铁丝穿过关节部位，实现了流畅的动作控制。</p>
+                <div class="placeholder-img">[Replace with: Image/GIF of the successful wire prop]</div>
+                <h4>Final Solution: Larger Size + Wire Joints</h4>
+                <p>After re-testing, we doubled the size of the characters and used fine wire through the joints, achieving smooth movement control.</p>
             </div>
         </div>
     </section>
 
     <section id="gallery">
-        <h2 class="section-title">分镜与幕后花絮</h2>
-        <p style="text-align: center; margin-bottom: 30px;">记录我们在三天高强度拍摄中的点点滴滴。</p>
+        <h2 class="section-title">Storyboard & Behind the Scenes</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Documenting our moments during the three days of intense filming.</p>
         <div class="gallery-grid">
-            <div class="placeholder-img">[花絮图 1：场景搭建]</div>
-            <div class="placeholder-img">[花絮图 2：打光测试]</div>
-            <div class="placeholder-img">[花絮图 3：手绘分镜稿 A]</div>
-            <div class="placeholder-img">[花絮图 4：手绘分镜稿 B]</div>
-            <div class="placeholder-img">[花絮图 5：深夜爆肝工作照]</div>
-            <div class="placeholder-img">[花絮图 6：团队合影]</div>
+            <div class="placeholder-img">[BTS Image 1: Set Building]</div>
+            <div class="placeholder-img">[BTS Image 2: Lighting Test]</div>
+            <div class="placeholder-img">[BTS Image 3: Hand-drawn Storyboard A]</div>
+            <div class="placeholder-img">[BTS Image 4: Hand-drawn Storyboard B]</div>
+            <div class="placeholder-img">[BTS Image 5: Late Night Working Session]</div>
+            <div class="placeholder-img">[BTS Image 6: Team Photo]</div>
         </div>
     </section>
 
     <section id="final">
-        <h2 class="section-title">最终作品</h2>
+        <h2 class="section-title">Final Animation</h2>
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div style="margin-top: 30px; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-            <h3>项目反思 (Reflection)</h3>
-            <p>这个项目教会了我们妥协与创新的平衡。虽然放弃了最初宏大的设定，但通过简化的剧本和精细的手工，我们依然传达了核心的理念。团队的紧密合作是这次作品能如期完成的关键。</p>
+            <h3>Project Reflection</h3>
+            <p>This project taught us the balance between compromise and innovation. Although we abandoned the initial grand setting, we still conveyed the core concept through a simplified script and delicate handcraft. The close collaboration of the team was the key to finishing this work on time.</p>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 由 [你的团队名称] 制作. 课程代码: [输入课程代码]</p>
-        <p>本项目由 GitHub Pages 强力驱动</p>
+        <p>© 2026 Crafted by [Your Team Name]. Course Code: [Enter Course Code]</p>
+        <p>Powered by GitHub Pages</p>
     </footer>
 
 </body>
