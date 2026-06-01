@@ -147,25 +147,21 @@
             box-shadow: 0 15px 30px rgba(74, 59, 50, 0.15);
         }
 
-        /* 团队照片占位样式 */
+        /* 团队照片样式 */
         .team-member {
             text-align: center;
             padding: 20px;
         }
-        .team-member h3 { margin-bottom: 5px; font-size: 1.2em; }
-        .team-member p { margin: 0; font-size: 0.9em; color: #777; }
+        .team-member h3 { margin-bottom: 5px; font-size: 1.2em; text-transform: uppercase; }
+        .team-member p { margin: 0; font-size: 1em; color: #777; font-weight: bold; }
         
-        .placeholder-img {
+        .profile-img {
             width: 100%;
             height: 280px;
-            background-color: #E8DCC4; /* 暖色调占位符 */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #A69B8D;
             border-radius: 10px;
             margin-bottom: 15px;
-            object-fit: cover;
+            object-fit: cover; /* 保证不同比例的照片都能铺满且不变形 */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         /* 手写体风格标题 */
@@ -235,7 +231,9 @@
     </nav>
 
     <section id="home">
-        <h1 class="script-title" style="font-size: 4em; color: var(--primary-color);">About Us</h1>
+        <h1 class="script-title" style="font-size: 4em; color: var(--primary-color);">Out of Sync</h1>
+        <p class="theme">Theme: Time Travel</p>
+        <p class="message">"Everyone moves at their own pace, and that is okay."</p>
         <a href="#about" style="display: inline-block; padding: 10px 25px; background-color: #A66C44; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; transition: background 0.3s;">Swipe Down</a>
     </section>
 
@@ -247,24 +245,24 @@
 
         <div class="team-grid">
             <div class="team-member card">
-                <div class="placeholder-img">Photo 1</div>
-                <h3>[Name 1]</h3>
-                <p>Role / ID</p>
+                <img class="profile-img" src="1.jpg" alt="YUAN HAOPU">
+                <h3>YUAN HAOPU</h3>
+                <p>0388636</p>
             </div>
             <div class="team-member card">
-                <div class="placeholder-img">Photo 2</div>
-                <h3>[Name 2]</h3>
-                <p>Role / ID</p>
+                <img class="profile-img" src="3.jpg" alt="TIAN ZUHAO">
+                <h3>TIAN ZUHAO</h3>
+                <p>0368752</p>
             </div>
             <div class="team-member card">
-                <div class="placeholder-img">Photo 3</div>
-                <h3>[Name 3]</h3>
-                <p>Role / ID</p>
+                <img class="profile-img" src="4.jpg" alt="YU HANMING">
+                <h3>YU HANMING</h3>
+                <p>0385010</p>
             </div>
             <div class="team-member card">
-                <div class="placeholder-img">Photo 4</div>
-                <h3>[Name 4]</h3>
-                <p>Role / ID</p>
+                <img class="profile-img" src="8.jpg" alt="ZHANG HAOZHE">
+                <h3>ZHANG HAOZHE</h3>
+                <p>0385351</p>
             </div>
         </div>
     </section>
